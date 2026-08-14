@@ -1,0 +1,7 @@
+# Netlify / Cloudflare Pages equivalent of vercel.json
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+/og.png
+  Cache-Control: public, max-age=604800

@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YS New York — L'Écharpe Monogramme · Édition 001—100</title>
+<meta name="description" content="A woven double-face scarf in merino and mulberry silk. The tonal monogram appears when the light does. One hundred numbered pieces, hemmed by hand. Made in Zürich, Switzerland.">
+<link rel="canonical" href="https://ysnewyork.com/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="YS New York">
+<meta property="og:title" content="L'Écharpe Monogramme · Édition 001—100">
+<meta property="og:description" content="It appears when the light does. Woven double-face, merino and mulberry silk, hand-whipped edge. One hundred numbered pieces.">
+<meta property="og:url" content="https://ysnewyork.com/">
+<meta property="og:image" content="https://ysnewyork.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#060B18">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Product",
+ "name":"L'Écharpe Monogramme","brand":{"@type":"Brand","name":"YS New York"},
+ "description":"Woven double-face scarf, 195 × 35 cm, 70% merino / 30% mulberry silk. Tonal monogram, hand-whipped edge, edition of one hundred.",
+ "image":"https://ysnewyork.com/og.png",
+ "offers":{"@type":"Offer","priceCurrency":"USD","price":"580",
+   "availability":"https://schema.org/LimitedAvailability","url":"https://ysnewyork.com/"}}
+</script>
+<!-- Analytics: uncomment when the domain is live.
+<script defer data-domain="ysnewyork.com" src="https://plausible.io/js/script.js"></script> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#E9E5DC; --ink:#0B111C;
+    --sombre:#060B18; --clair:#1F2C45; --clairAlt:#2A3A57; --faceB:#0C1526;
+    --lit:#3B5279; --warm:#8A8476; --deep:#4A463D;
+    --rule:rgba(11,17,28,.18); --focus:#4A5B7A;
+    --gut:clamp(20px,5vw,72px);
+    --display:"Bodoni Moda",Didot,"Bodoni 72",serif;
+    --sans:"Jost",Futura,"Century Gothic",sans-serif;
+    --silk:cubic-bezier(.19,1,.22,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:300;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden}
+  body.locked{overflow:hidden}
+  button,input{font-family:inherit}
+
+  #grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.22;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/></filter><rect width='140' height='140' filter='url(%23n)' opacity='.5'/></svg>")}
+  main,header,footer{position:relative;z-index:2}
+
+  #curtain{position:fixed;inset:0;z-index:200;background:var(--paper);display:grid;place-items:center;
+    transition:transform 1.5s var(--silk) .5s}
+  #curtain.up{transform:translateY(-101%)}
+  #curtain b{font-family:var(--display);font-weight:400;font-size:22px;letter-spacing:.6em;padding-left:.6em;
+    opacity:0;animation:cIn 1s var(--silk) .1s forwards}
+  @keyframes cIn{to{opacity:1}}
+
+  .ticker{background:var(--sombre);color:#8FA0BC;font-size:8.5px;letter-spacing:.36em;text-transform:uppercase;
+    text-align:center;padding:9px 16px;position:relative;z-index:3}
+  .nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:20px;
+    padding:17px var(--gut);border-bottom:1px solid var(--rule);
+    background:color-mix(in srgb,var(--paper) 78%,transparent);backdrop-filter:blur(11px)}
+  .mark{font-family:var(--display);font-size:15px;letter-spacing:.46em;background:none;border:0;color:var(--ink);
+    cursor:pointer;padding-left:.46em}
+  .links{display:none;gap:36px}
+  @media(min-width:900px){.links{display:flex}}
+  .links a{color:var(--warm);text-decoration:none;font-size:8.5px;letter-spacing:.32em;text-transform:uppercase;
+    padding-bottom:3px;border-bottom:1px solid transparent;transition:.7s var(--silk)}
+  .links a:hover{color:var(--ink);border-color:var(--focus)}
+  .register{background:none;border:0;color:var(--ink);cursor:pointer;font-size:8.5px;letter-spacing:.32em;
+    text-transform:uppercase;display:flex;align-items:center;gap:10px}
+  .count{font-family:var(--display);font-size:12px;min-width:21px;height:21px;border:1px solid var(--rule);
+    border-radius:50%;display:grid;place-items:center;transition:.8s var(--silk)}
+  .count.pop{background:var(--sombre);color:#C6D0E0;transform:rotate(360deg)}
+
+  .s{padding:clamp(76px,11vh,140px) var(--gut);max-width:1320px;margin-inline:auto}
+  .eyebrow{font-size:8.5px;letter-spacing:.38em;text-transform:uppercase;color:var(--warm);display:flex;
+    align-items:center;gap:16px;margin-bottom:28px}
+  .eyebrow::after{content:"";flex:1;height:1px;background:var(--rule)}
+  h2{font-family:var(--display);font-weight:400;font-size:clamp(28px,3.9vw,50px);line-height:1.09}
+  h2 em{font-style:italic}
+  .cap{font-size:8.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--warm)}
+
+  /* ══ THE CLOTH ══════════════════════════════════ */
+  .cloth{position:relative;overflow:hidden;background:var(--sombre);touch-action:pan-y;
+    box-shadow:0 30px 70px -44px rgba(6,11,24,.9)}
+  .cloth svg{width:100%;height:100%;display:block}
+  .lay{position:absolute;inset:0}
+  /* the monogram sits ΔL 12 above the ground — barely there */
+  .mono{opacity:1}
+  /* the same glyphs, brighter, revealed only where the light rakes */
+  .lit{-webkit-mask-image:linear-gradient(102deg,transparent calc(var(--lx,50%) - 15%),#000 var(--lx,50%),transparent calc(var(--lx,50%) + 15%));
+       mask-image:linear-gradient(102deg,transparent calc(var(--lx,50%) - 15%),#000 var(--lx,50%),transparent calc(var(--lx,50%) + 15%))}
+  .sheen{position:absolute;inset:0;pointer-events:none;mix-blend-mode:screen;opacity:.5;
+    background:linear-gradient(102deg,transparent calc(var(--lx,50%) - 13%),rgba(150,175,215,.22) var(--lx,50%),transparent calc(var(--lx,50%) + 13%))}
+  .twill{position:absolute;inset:0;pointer-events:none;opacity:.09;
+    background:repeating-linear-gradient(63deg,#9FB2CE 0 .5px,transparent .5px 3.5px)}
+
+  /* ══ hero ══ */
+  .hero{padding-top:clamp(46px,7vh,92px)}
+  .logotype{font-family:var(--display);font-weight:400;font-size:clamp(24px,3.6vw,48px);line-height:1;
+    letter-spacing:.055em;white-space:nowrap}
+  .logotype span{display:inline-block;opacity:0;transform:translateY(.42em)}
+  .hairline{height:1px;background:var(--ink);width:0;margin:22px 0 20px;opacity:.4}
+  .kicker{font-family:var(--display);font-style:italic;font-size:clamp(16px,1.6vw,22px);color:var(--deep);opacity:0}
+  .heroBand{margin-top:clamp(44px,6vh,80px);opacity:0;transform:translateY(30px)}
+
+  .bandFoot{display:flex;justify-content:space-between;margin-top:16px;opacity:0}
+  .heroCta{margin-top:40px;opacity:0;display:flex;flex-wrap:wrap;gap:18px;align-items:center}
+
+  /* ══ buttons ══ */
+  .btn{position:relative;overflow:hidden;border:1px solid var(--ink);background:none;color:var(--ink);cursor:pointer;
+    padding:17px 32px;font-size:8.5px;letter-spacing:.34em;text-transform:uppercase;display:inline-block;
+    transition:transform .5s var(--silk)}
+  .btn span{position:relative;z-index:1;transition:color .8s var(--silk)}
+  .btn::before{content:"";position:absolute;inset:0;background:var(--ink);transform:scaleX(0);transform-origin:left;
+    transition:transform .9s var(--silk)}
+  .btn:hover::before,.btn:focus-visible::before{transform:scaleX(1)}
+  .btn:hover span,.btn:focus-visible span{color:var(--paper)}
+  .btn.solid{background:var(--sombre);color:#DCE3EE;border-color:var(--sombre)}
+  .btn.solid::before{background:var(--clairAlt)}
+  .btn.solid:hover span{color:#DCE3EE}
+  .btn[disabled]{opacity:.3;pointer-events:none}
+  .link{background:none;border:0;color:var(--warm);cursor:pointer;font-size:8.5px;letter-spacing:.32em;
+    text-transform:uppercase;border-bottom:1px solid var(--rule);padding-bottom:4px;transition:.7s var(--silk)}
+  .link:hover{color:var(--ink);border-color:var(--focus)}
+
+  /* ══ the scan: 195 cm passes you ══ */
+  .scanWrap{height:300vh;position:relative}
+  .scanStick{position:sticky;top:0;height:100svh;display:grid;place-items:center;overflow:hidden}
+  .scanRail{width:100%;overflow:hidden}
+  .scanMove{width:280vw;will-change:transform}
+
+  .scanCap{position:absolute;bottom:9vh;left:var(--gut);right:var(--gut);display:flex;justify-content:space-between}
+
+  /* ══ double face ══ */
+  .flipWrap{perspective:2200px;margin-top:52px}
+  .flipInner{position:relative;transform-style:preserve-3d;transition:transform 1.6s var(--silk)}
+  .face.a{transform:translateZ(1.5px)}
+  .flipInner.turned{transform:rotateY(180deg)}
+  .face{backface-visibility:hidden;-webkit-backface-visibility:hidden}
+  .face.b{position:absolute;inset:0;transform:rotateY(180deg) translateZ(1.5px)}
+
+  .flipBar{display:flex;justify-content:space-between;align-items:center;margin-top:20px;gap:20px}
+
+  /* ══ the repeat ══ */
+  .repeat{display:grid;gap:clamp(36px,5vw,80px);align-items:center}
+  @media(min-width:900px){.repeat{grid-template-columns:.85fr 1.15fr}}
+  .plate{background:var(--sombre);padding:clamp(18px,3vw,40px);position:relative;overflow:hidden;
+    box-shadow:0 30px 70px -44px rgba(6,11,24,.9)}
+  .plate svg{width:100%;display:block}
+  .rules{list-style:none;margin-top:8px}
+  .rules li{display:flex;gap:20px;padding:16px 0;border-bottom:1px solid var(--rule);font-size:13px;
+    line-height:1.7;color:var(--deep)}
+  .rules b{font-family:var(--display);font-weight:400;font-size:15px;color:var(--warm);min-width:2ch}
+
+  /* ══ the atelier plate ═════════════════════════ */
+  .atelier{display:grid;gap:clamp(34px,4.5vw,70px);align-items:center;margin-top:52px}
+  @media(min-width:900px){.atelier{grid-template-columns:.92fr 1.08fr}}
+  .plateImg{position:relative;overflow:hidden;background:var(--sombre);aspect-ratio:4/5;
+    box-shadow:0 34px 80px -50px rgba(6,11,24,.9)}
+  .plateImg .zoom{position:absolute;inset:0;transition:transform 1.7s var(--silk)}
+  .plateImg:hover .zoom{transform:scale(1.04)}
+  .plateImg img{position:absolute;left:0;top:-9%;width:100%;height:118%;object-fit:cover;
+    display:block;will-change:transform}
+  .plateImg::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg,rgba(6,11,24,.22),transparent 32%,transparent 62%,rgba(6,11,24,.34))}
+  .plateCap{display:flex;justify-content:space-between;gap:16px;margin-top:14px;flex-wrap:wrap}
+  .swatchRow{display:flex;align-items:center;gap:14px;margin-top:30px}
+  .chip{width:34px;height:34px;flex:none;border:1px solid var(--rule)}
+  .chip+.chip{margin-left:-6px}
+  .swatchRow p{font-size:11.5px;line-height:1.75;color:var(--warm);margin-left:8px}
+
+  /* ══ the drape — 195 cm of cloth, in space ══ */
+  .stage{position:relative;height:clamp(250px,42vh,420px);margin-top:46px;cursor:grab;
+    touch-action:pan-y;perspective:1500px;perspective-origin:50% 46%}
+  .stage:active{cursor:grabbing}
+  .world{position:absolute;inset:0;transform-style:preserve-3d;
+    transform:rotateX(var(--rx,-9deg)) rotateY(var(--ry,-18deg))}
+  .seg{position:absolute;left:50%;top:50%;transform-style:preserve-3d;will-change:transform;
+    transform-origin:0 50%}
+  .sfA,.sfB{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;
+    will-change:filter}
+  .sfA{background-repeat:repeat;background-color:#060B18}
+  .sfB{transform:rotateY(180deg);background:var(--faceB)}
+  .stageCue{position:absolute;left:0;bottom:-4px;font-size:8px;letter-spacing:.3em;text-transform:uppercase;
+    color:var(--warm);transition:opacity .9s;pointer-events:none}
+  .stage:hover .stageCue{opacity:0}
+  .seasonBtns{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:44px}
+  @media(min-width:760px){.seasonBtns{grid-template-columns:repeat(3,1fr)}}
+  .sBtn{background:var(--paper);border:0;padding:24px 22px;cursor:pointer;text-align:left;
+    transition:background .9s var(--silk);color:inherit}
+  .sBtn[aria-checked="true"]{background:#E2DDD1}
+  .sBtn h3{font-family:var(--display);font-weight:400;font-size:22px;margin-bottom:7px}
+  .sBtn p{font-size:11.5px;line-height:1.75;color:var(--warm)}
+  .sBtn .len{font-size:8px;letter-spacing:.3em;text-transform:uppercase;color:var(--warm);margin-bottom:11px}
+
+  /* the cloth has thickness: 3 mm turned once, whipped by hand */
+  .edge{position:absolute;background:#0A1120;
+    background-image:repeating-linear-gradient(90deg,transparent 0 5px,rgba(51,69,106,.85) 5px 6px)}
+  .edge.el{left:0;top:0;bottom:0;width:3px;transform:rotateY(-90deg);transform-origin:left center}
+  .edge.er{right:0;top:0;bottom:0;width:3px;transform:rotateY(90deg);transform-origin:right center}
+  .edge.et{left:0;right:0;top:0;height:3px;transform:rotateX(90deg);transform-origin:center top;
+    background-image:repeating-linear-gradient(0deg,transparent 0 5px,rgba(51,69,106,.85) 5px 6px)}
+  .edge.eb{left:0;right:0;bottom:0;height:3px;transform:rotateX(-90deg);transform-origin:center bottom;
+    background-image:repeating-linear-gradient(0deg,transparent 0 5px,rgba(51,69,106,.85) 5px 6px)}
+
+  .specs{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:48px}
+  @media(min-width:640px){.specs{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:980px){.specs{grid-template-columns:repeat(5,1fr)}}
+  .spec{background:var(--paper);padding:28px 22px}
+  .spec dt{font-size:8px;letter-spacing:.32em;text-transform:uppercase;color:var(--warm);margin-bottom:11px}
+  .spec dd{font-family:var(--display);font-size:20px}
+  .spec dd small{display:block;font-family:var(--sans);font-size:10px;letter-spacing:.14em;color:var(--warm);margin-top:6px}
+
+  /* ══ overlays ══ */
+  .scrim{position:fixed;inset:0;z-index:40;background:rgba(6,11,24,.55);backdrop-filter:blur(4px);opacity:0;
+    pointer-events:none;transition:opacity .8s var(--silk)}
+  .scrim.on{opacity:1;pointer-events:auto}
+  .sheet{position:fixed;inset:auto 0 0 0;z-index:50;background:var(--paper);max-height:94svh;overflow-y:auto;
+    transform:translateY(101%);transition:transform 1s var(--silk);border-top:1px solid var(--sombre)}
+  .sheet.on{transform:none}
+  .sheetIn{display:grid;gap:clamp(26px,3.2vw,54px);padding:clamp(20px,3vw,50px);max-width:1180px;margin-inline:auto}
+  @media(min-width:920px){.sheetIn{grid-template-columns:1fr 1fr;align-items:start}}
+  .close{position:sticky;top:0;margin-left:auto;background:none;border:0;cursor:pointer;color:var(--ink);
+    font-size:8.5px;letter-spacing:.32em;text-transform:uppercase;padding:16px var(--gut) 0;display:block;z-index:2}
+  .pTitle{font-family:var(--display);font-weight:400;font-size:clamp(30px,3.6vw,46px);line-height:1.04}
+  .pSub{font-family:var(--display);font-style:italic;color:var(--warm);font-size:16px;margin:6px 0 20px}
+  .pPrice{font-family:var(--display);font-size:22px;margin-bottom:26px}
+  .ways{display:flex;gap:12px;margin-bottom:8px}
+  .sw{width:46px;height:46px;border:1px solid var(--rule);cursor:pointer;padding:0;position:relative;transition:.7s var(--silk)}
+  .sw[aria-checked="true"]{outline:1px solid var(--ink);outline-offset:4px}
+  .sw:disabled{cursor:not-allowed;opacity:.5}
+  .sw:disabled::after{content:"";position:absolute;inset:50% 5px auto;height:1px;background:var(--focus)}
+  .swName{font-size:8.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--warm);margin-bottom:24px}
+  .assign{border-block:1px solid var(--rule);padding:22px 0;margin:24px 0;display:flex;justify-content:space-between;
+    align-items:baseline;gap:16px}
+  .assign small{font-size:8px;letter-spacing:.32em;text-transform:uppercase;color:var(--warm)}
+  .assign .num{font-family:var(--display);font-size:38px}
+  .assign .num i{font-style:normal;color:var(--focus)}
+  .pList{list-style:none;margin-top:28px;font-size:12.5px;line-height:2.1;color:var(--warm)}
+  .pList li{display:flex;justify-content:space-between;gap:18px;border-bottom:1px solid var(--rule);padding:5px 0}
+  .pList b{font-weight:400;color:var(--ink)}
+
+  .drawer{position:fixed;top:0;right:0;bottom:0;width:min(444px,100%);z-index:60;background:var(--paper);
+    border-left:1px solid var(--sombre);transform:translateX(101%);transition:transform .95s var(--silk);
+    display:flex;flex-direction:column}
+  .drawer.on{transform:none}
+  .dHead{display:flex;justify-content:space-between;align-items:center;padding:22px 26px;border-bottom:1px solid var(--rule)}
+  .dHead h3{font-family:var(--display);font-weight:400;font-size:22px}
+  .dBody{flex:1;overflow-y:auto;padding:26px}
+  .empty{color:var(--warm);font-size:13px;line-height:2}
+  .item{display:grid;grid-template-columns:86px 1fr auto;gap:16px;align-items:center;padding:18px 0;
+    border-bottom:1px solid var(--rule)}
+  .item .thumb{position:relative;overflow:hidden;background:var(--sombre)}
+  .item h4{font-family:var(--display);font-weight:400;font-size:17px}
+  .item small{display:block;font-size:8px;letter-spacing:.3em;text-transform:uppercase;color:var(--warm);margin-top:5px}
+  .item .rm{background:none;border:0;color:var(--warm);cursor:pointer;font-size:8px;letter-spacing:.26em;
+    text-transform:uppercase;border-bottom:1px solid var(--rule);padding:0 0 2px;margin-top:9px}
+  .item .rm:hover{color:var(--ink)}
+  .item .p{font-family:var(--display);font-size:16px;text-align:right}
+  .dFoot{border-top:1px solid var(--sombre);padding:24px 26px}
+  .dFoot .btn{width:100%;text-align:center}
+  .row{display:flex;justify-content:space-between;font-size:10px;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--warm);margin-bottom:12px}
+  .row.total{color:var(--ink);font-family:var(--display);font-size:19px;letter-spacing:.02em;text-transform:none;margin:16px 0 20px}
+  .fine{font-size:8px;letter-spacing:.24em;text-transform:uppercase;color:var(--warm);margin-top:14px;text-align:center;line-height:2}
+
+/* ══ checkout ══ */
+  .checkout{position:fixed;inset:0;z-index:80;background:var(--paper);overflow-y:auto;transform:translateY(101%);
+    transition:transform 1.05s var(--silk);visibility:hidden}
+  .checkout.on{transform:none;visibility:visible}
+  .coHead{display:flex;justify-content:space-between;align-items:center;padding:20px var(--gut);
+    border-bottom:1px solid var(--rule);position:sticky;top:0;background:var(--paper);z-index:3}
+  .coIn{display:grid;gap:clamp(34px,4vw,76px);padding:clamp(30px,5vh,66px) var(--gut) 90px;max-width:1180px;margin-inline:auto}
+  @media(min-width:900px){.coIn{grid-template-columns:1.2fr .8fr}}
+  .steps{display:flex;margin-bottom:44px;border-bottom:1px solid var(--rule)}
+  .step{flex:1;padding:0 0 14px;font-size:8.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--warm);
+    border:0;border-bottom:1px solid transparent;margin-bottom:-1px;transition:.8s var(--silk);text-align:left;
+    background:none;cursor:default}
+  .step b{font-family:var(--display);font-weight:400;letter-spacing:.06em;margin-right:9px;font-size:11px}
+  .step.now{color:var(--ink);border-bottom-color:var(--ink)}
+  .step.did{color:var(--deep);cursor:pointer}
+  .pane{display:none;animation:paneIn .9s var(--silk)}
+  .pane.on{display:block}
+  @keyframes paneIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+  .paneTitle{font-family:var(--display);font-size:clamp(23px,2.5vw,32px);margin-bottom:30px}
+  .fields{display:grid;gap:22px}
+  .two,.three{display:grid;gap:22px}
+  @media(min-width:600px){.two{grid-template-columns:1fr 1fr}.three{grid-template-columns:2fr 1fr 1fr}}
+  .field label{display:block;font-size:8px;letter-spacing:.32em;text-transform:uppercase;color:var(--warm);margin-bottom:9px}
+  .field input{width:100%;background:none;border:0;border-bottom:1px solid var(--rule);padding:11px 0;
+    font-family:var(--display);font-size:17px;color:var(--ink);transition:border-color .6s}
+  .field input::placeholder{color:rgba(138,132,118,.5)}
+  .field input:focus{outline:0;border-color:var(--focus)}
+  .field.bad input{border-color:#8C4A4A}
+  .field .err{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#8C4A4A;margin-top:7px;height:0;opacity:0;transition:.5s}
+  .field.bad .err{height:auto;opacity:1}
+  .ships{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:10px}
+  .ship{background:var(--paper);display:flex;justify-content:space-between;align-items:center;gap:16px;
+    padding:20px 22px;cursor:pointer;transition:.7s var(--silk)}
+  .ship[aria-checked="true"]{background:#E2DDD1}
+  .ship .n{font-family:var(--display);font-size:18px}
+  .ship .d{font-size:8.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--warm);margin-top:5px}
+  .ship .c{font-family:var(--display);font-size:16px}
+  .coNav{display:flex;gap:16px;align-items:center;margin-top:44px}
+  .note{font-size:8.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--warm);border:1px solid var(--rule);
+    padding:14px 16px;margin-top:26px;line-height:1.9}
+  .summary{border:1px solid var(--rule);padding:28px;align-self:start;position:sticky;top:100px;background:rgba(244,240,228,.35)}
+  .summary h4{font-family:var(--display);font-weight:400;font-size:19px;margin-bottom:20px}
+  .sItem{display:grid;grid-template-columns:64px 1fr auto;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--rule)}
+  .sItem .thumb{position:relative;overflow:hidden;background:var(--sombre)}
+  .sItem .n{font-family:var(--display);font-size:15px}
+  .sItem small{display:block;font-size:8px;letter-spacing:.28em;text-transform:uppercase;color:var(--warm);margin-top:4px}
+  .sItem .p{font-family:var(--display);font-size:14px}
+  .promo{display:flex;gap:10px;margin:20px 0 4px}
+  .promo input{flex:1;background:none;border:0;border-bottom:1px solid var(--rule);padding:9px 0;font-size:11px;
+    letter-spacing:.24em;text-transform:uppercase;color:var(--ink)}
+  .promo input:focus{outline:0;border-color:var(--focus)}
+  .promo button{background:none;border:0;border-bottom:1px solid var(--rule);cursor:pointer;color:var(--warm);
+    font-size:8px;letter-spacing:.26em;text-transform:uppercase;padding:0 0 3px}
+  .promo button:hover{color:var(--ink)}
+  .promoMsg{font-size:8.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--focus);margin-top:8px;min-height:12px}
+  .thanks{max-width:640px;margin:0 auto;text-align:center;padding:clamp(60px,12vh,130px) var(--gut)}
+  .thanks .big{font-family:var(--display);font-size:clamp(28px,3.8vw,46px);line-height:1.12;margin:26px 0 18px}
+  .thanks .nums{font-family:var(--display);font-size:26px;color:var(--focus);letter-spacing:.08em;margin:22px 0}
+  .thanks .ord{font-size:8.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--warm)}
+
+  footer{border-top:1px solid var(--rule);padding:52px var(--gut) 34px;display:grid;gap:36px}
+  @media(min-width:760px){.fGrid{grid-template-columns:1.2fr 1fr 1fr 1fr}}
+  .fGrid{display:grid;gap:34px}
+  .fCol h5{font-size:8px;letter-spacing:.32em;text-transform:uppercase;color:var(--warm);margin-bottom:16px;font-weight:400}
+  .fCol a,.fCol span{display:block;color:var(--deep);text-decoration:none;font-size:12px;line-height:2.1;
+    letter-spacing:.06em;width:fit-content;border-bottom:1px solid transparent;transition:.6s var(--silk)}
+  .fCol a:hover{color:var(--ink);border-color:var(--focus)}
+  .fMark{font-family:var(--display);font-size:15px;letter-spacing:.46em;padding-left:.46em;margin-bottom:14px;color:var(--ink)}
+  .fLine{font-family:var(--display);font-style:italic;font-size:14px;color:var(--warm);max-width:26ch;line-height:1.6}
+  .fBase{border-top:1px solid var(--rule);padding-top:24px;display:flex;flex-wrap:wrap;gap:14px;
+    justify-content:space-between;font-size:8px;letter-spacing:.3em;text-transform:uppercase;color:var(--warm)}
+
+  .up{opacity:0;transform:translateY(26px);transition:opacity 1.3s ease,transform 1.5s var(--silk)}
+  .up.in{opacity:1;transform:none}
+  :focus-visible{outline:1px solid var(--focus);outline-offset:4px}
+
+  /* ══ account ════════════════════════════════════ */
+  .acctBtn{background:none;border:0;color:var(--ink);cursor:pointer;font-size:8.5px;letter-spacing:.32em;
+    text-transform:uppercase;display:flex;align-items:center;gap:9px;padding:0}
+  .dialog{position:fixed;inset:0;z-index:65;display:grid;place-items:center;padding:var(--gut);
+    opacity:0;pointer-events:none;transition:opacity .7s var(--silk)}
+  .dialog.on{opacity:1;pointer-events:auto}
+  .dialogIn{background:var(--paper);border:1px solid var(--sombre);padding:clamp(24px,3vw,38px);
+    width:min(468px,100%);max-height:88svh;overflow-y:auto;transform:translateY(20px) scale(.98);
+    transition:transform .85s var(--silk)}
+  .dialog.on .dialogIn{transform:none}
+  .dTop{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px}
+  .dTop h3{font-family:var(--display);font-weight:400;font-size:22px}
+  .tabs{display:flex;border-bottom:1px solid var(--rule);margin-bottom:28px}
+  .tab{flex:1;background:none;border:0;border-bottom:1px solid transparent;margin-bottom:-1px;padding:0 0 14px;
+    font-size:8.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--warm);cursor:pointer;
+    transition:.8s var(--silk);text-align:left}
+  .tab.now{color:var(--ink);border-bottom-color:var(--ink)}
+  .tpane{display:none;animation:paneIn .8s var(--silk)}
+  .tpane.on{display:block}
+  .msg{font-size:8.5px;letter-spacing:.22em;text-transform:uppercase;margin-top:14px;min-height:12px;
+    text-align:center;color:#8C4A4A}
+  .msg.ok{color:var(--focus)}
+  .who{display:flex;gap:16px;align-items:center}
+  .init{width:54px;height:54px;border:1px solid var(--rule);border-radius:50%;display:grid;place-items:center;
+    font-family:var(--display);font-size:17px;letter-spacing:.06em;flex:none}
+  .who .nm{font-family:var(--display);font-size:21px}
+  .who .em{font-size:11px;letter-spacing:.12em;color:var(--warm);margin-top:4px;word-break:break-all}
+  .mine{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:13px 0;
+    border-bottom:1px solid var(--rule);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--warm)}
+  .mine b{font-family:var(--display);font-weight:400;font-size:16px;letter-spacing:.04em;color:var(--ink);text-transform:none}
+
+  /* ══ contact ════════════════════════════════════ */
+  .contact{display:grid;gap:clamp(34px,5vw,72px);margin-top:6px}
+  @media(min-width:900px){.contact{grid-template-columns:.9fr 1.1fr}}
+  .cList{list-style:none}
+  .cList div{border-bottom:1px solid var(--rule);padding:20px 0}
+  .cList dt{font-size:8px;letter-spacing:.32em;text-transform:uppercase;color:var(--warm);margin-bottom:9px}
+  .cList dd{font-family:var(--display);font-size:18px;line-height:1.5}
+  .cList dd a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule);transition:.6s var(--silk)}
+  .cList dd a:hover{border-color:var(--focus)}
+  .cList small{display:block;font-family:var(--sans);font-size:10.5px;letter-spacing:.14em;color:var(--warm);margin-top:7px}
+  .cSent{text-align:center;padding:46px 10px;animation:paneIn .9s var(--silk)}
+  .cSent .big{font-family:var(--display);font-size:26px;margin:16px 0 10px}
+
+  .createIn{max-width:520px;margin:0 auto;padding:clamp(40px,8vh,90px) var(--gut) 90px}
+  .createLede{text-align:center;margin:18px auto 0;max-width:44ch;color:var(--warm);
+    font-size:13px;line-height:1.9}
+
+  /* ══ the phone ══════════════════════════════════ */
+  .menuBtn{display:none;background:none;border:0;color:var(--ink);cursor:pointer;font-size:8.5px;
+    letter-spacing:.32em;text-transform:uppercase;padding:0}
+  .menuPanel{position:fixed;inset:0;z-index:70;background:var(--paper);transform:translateY(-101%);
+    transition:transform .9s var(--silk);display:flex;flex-direction:column;padding:var(--gut)}
+  .menuPanel.on{transform:none}
+  .menuPanel .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:34px}
+  .menuPanel a{font-family:var(--display);font-size:clamp(28px,8.5vw,40px);color:var(--ink);
+    text-decoration:none;padding:20px 0;border-bottom:1px solid var(--rule)}
+
+  @media(max-width:900px){
+    .summary{position:static;order:-1}
+  }
+  @media(max-width:899px){
+    .menuBtn{display:block}
+  }
+  @media(max-width:760px){
+    /* the band is now taller than it is on a desktop, so 46svh of it always shows */
+    .scanMove{width:calc(46svh * 5.5715)}
+    .scanCap span:last-child{display:none}
+    .step{letter-spacing:.14em;font-size:8px}
+    .step b{margin-right:5px}
+    .flipWrap{perspective:900px}
+    .item{grid-template-columns:76px 1fr auto;gap:12px}
+    .btn{padding:16px 24px}
+    .heroCta{gap:14px 18px}
+  }
+
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+    .up,.heroBand,.kicker,.heroCta,.bandFoot,.logotype span{opacity:1;transform:none}
+    .hairline{width:100%} #curtain{display:none} html{scroll-behavior:auto}
+    .scanWrap{height:auto} .scanStick{height:auto;padding:60px 0}
+    .lit{-webkit-mask-image:none;mask-image:none;opacity:.55}
+  }
+</style>
+</head>
+<body>
+
+<div id="curtain"><b>YS</b></div>
+<div id="grain"></div>
+
+<div class="ticker">L'Écharpe Monogramme · Made in Zürich, Switzerland · Édition 001—100</div>
+
+<header class="nav">
+  <button class="mark" onclick="scrollTo({top:0})">YS</button>
+  <nav class="links">
+    <a href="#length">The Length</a>
+    <a href="#faces">Double-Face</a>
+    <a href="#mark">The Mark</a>
+    <a href="#house">The Cloth</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div style="display:flex;align-items:center;gap:clamp(14px,2vw,24px)">
+    <button class="acctBtn" id="openAcct"><span id="acctLabel">Account</span></button>
+    <button class="menuBtn" id="menuBtn">Menu</button>
+    <button class="register" id="openCart">Register <span class="count" id="count">0</span></button>
+  </div>
+</header>
+
+<div class="menuPanel" id="menuPanel">
+  <div class="top"><span class="mark" style="cursor:default">YS</span>
+    <button class="link" id="menuClose">Close</button></div>
+  <a href="#length">The Length</a>
+  <a href="#faces">Double-Face</a>
+  <a href="#mark">The Mark</a>
+  <a href="#house">The Cloth</a>
+  <a href="#contact">Contact</a>
+  <div style="margin-top:auto" class="cap">L'Écharpe Monogramme · 195 × 35 cm</div>
+</div>
+
+<main>
+
+  <section class="s hero">
+    <h1 class="logotype" id="lt">YS NEW YORK</h1>
+    <div class="hairline" id="hl"></div>
+    <div class="kicker" id="kk">It appears when the light does.</div>
+
+    <div class="heroBand" id="hb">
+      <div class="cloth lightable" data-scarf="A"></div>
+    </div>
+    <div class="bandFoot cap" id="bf">
+      <span>L'Écharpe Monogramme</span><span>195 × 35 cm</span><span>Marine Sombre / Marine Clair</span>
+    </div>
+
+    <div class="heroCta" id="hc">
+      <button class="btn solid" id="heroBuy"><span>Reserve a number</span></button>
+      <button class="link" onclick="document.getElementById('length').scrollIntoView()">See the length</button>
+      <button class="link" id="tiltCue" hidden>Tilt to catch the light</button>
+    </div>
+  </section>
+
+  <section class="scanWrap" id="length">
+    <div class="scanStick">
+      <div class="scanRail"><div class="scanMove" id="scanMove">
+        <div class="cloth lightable" data-scarf="A" data-full="1"></div>
+      </div></div>
+      <div class="scanCap cap"><span>195.0 cm</span><span id="scanPct">0 cm</span><span>Woven double-face</span></div>
+    </div>
+  </section>
+
+  <section class="s" id="faces">
+    <div class="eyebrow up">Double-face</div>
+    <h2 class="up">Monogram, tonal.<br><em>Then nothing at all.</em></h2>
+    <div class="flipWrap up">
+      <div class="flipInner" id="flipInner">
+        <div class="face a"><div class="cloth lightable" data-scarf="A"></div></div>
+        <div class="face b"><div class="cloth lightable" data-scarf="B"></div></div>
+        <div class="edge el"></div><div class="edge er"></div>
+        <div class="edge et"></div><div class="edge eb"></div>
+      </div>
+    </div>
+    <div class="flipBar">
+      <span class="cap" id="faceLabel">Face A — monogram, tonal</span>
+      <button class="link" id="flipBtn">Turn the cloth</button>
+    </div>
+  </section>
+
+  <section class="s" id="mark">
+    <div class="repeat">
+      <div class="plate up"><svg id="repeatSq" viewBox="0 0 88 114"></svg></div>
+      <div>
+        <div class="eyebrow up">The repeat</div>
+        <h2 class="up">4.4 × 5.7 cm,<br><em>centred on the width.</em></h2>
+        <ul class="rules up">
+          <li><b>1</b><span>The Y and the S share one junction. Never separated.</span></li>
+          <li><b>2</b><span>Every second glyph is inverted 180°. Never mirrored.</span></li>
+          <li><b>3</b><span>One pearl per gap, 1.4 mm, joining across every boundary.</span></li>
+          <li><b>4</b><span>No glyph is cut by the selvedge.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="s">
+    <div class="eyebrow up">Three seasons</div>
+    <h2 class="up">Doubled, open,<br><em>or folded once.</em></h2>
+    <div class="stage up" id="stage">
+      <div class="world" id="world"></div>
+      <div class="stageCue">Drag to turn it &#183; move across it for the light</div>
+    </div>
+    <div class="seasonBtns up" id="seasonBtns" role="radiogroup" aria-label="How it is worn"></div>
+  </section>
+
+  <section class="s" id="house">
+    <div class="eyebrow up">The cloth</div>
+    <h2 class="up">Merino carries the warmth.<br><em>Silk carries the light.</em></h2>
+
+    <div class="atelier">
+      <figure class="up">
+        <div class="plateImg"><div class="zoom"><img id="atelierImg" alt="Marine cloth being worked by hand in the atelier"
+          decoding="async" src="/atelier.webp" onerror="this.onerror=null;this.src='/atelier.jpg'" loading="lazy"></div></div>
+        <figcaption class="plateCap cap"><span>The atelier, Zürich</span><span>Yarn dyed before weaving</span></figcaption>
+      </figure>
+      <div>
+        <p class="up">Wool and silk are dyed separately to the sealed lab dip, then plied. The cloth is
+        woven double-face in Zürich, finished below 30&#176;C, pressed flat — and never brushed. Every edge
+        is turned 3&#160;mm once and overcast by hand, seven to eight stitches to the centimetre.</p>
+        <div class="swatchRow up">
+          <span class="chip" style="background:#060B18"></span>
+          <span class="chip" style="background:#12172A"></span>
+          <span class="chip" style="background:#1F2C45"></span>
+          <p>The navy in her hands falls between Marine Sombre and Marine Clair —
+          the whole design lives in that twelve-point gap.</p>
+        </div>
+      </div>
+    </div>
+
+    <dl class="specs up">
+      <div class="spec"><dt>Composition</dt><dd>70 / 30<small>Merino · mulberry silk</small></dd></div>
+      <div class="spec"><dt>Weight</dt><dd>310 g/m²<small>213 g the piece</small></dd></div>
+      <div class="spec"><dt>Edge</dt><dd>3 mm<small>Hand-whipped, all four sides</small></dd></div>
+      <div class="spec"><dt>Origin</dt><dd>Zürich<small>Made in Switzerland</small></dd></div>
+      <div class="spec"><dt>Edition</dt><dd>001—100<small>Numbered by hand</small></dd></div>
+    </dl>
+  </section>
+
+  <section class="s" id="contact">
+    <div class="eyebrow up">Contact</div>
+    <h2 class="up">Write to the house.</h2>
+    <div class="contact">
+      <dl class="cList up">
+        <div><dt>Correspondence</dt><dd><a href="mailto:hello@ysnewyork.com">hello@ysnewyork.com</a>
+          <small>Anything at all. Replied to within two working days.</small></dd></div>
+        <div><dt>The register</dt><dd><a href="mailto:register@ysnewyork.com">register@ysnewyork.com</a>
+          <small>Numbers, holds, and orders already placed.</small></dd></div>
+        <div><dt>Press &amp; stockists</dt><dd><a href="mailto:press@ysnewyork.com">press@ysnewyork.com</a></dd></div>
+        <div><dt>Telephone</dt><dd><a href="tel:+12125550142">+1 212 555 0142</a>
+          <small>Monday to Friday, 10—18 New York time.</small></dd></div>
+        <div><dt>The atelier</dt><dd>Zürich, Switzerland<small>Where the cloth is woven and hemmed. By appointment only — write first.</small></dd></div>
+        <div><dt>The house</dt><dd>New York<small>Design and the register.</small></dd></div>
+      </dl>
+
+      <div class="up">
+        <div id="cForm">
+          <div class="fields">
+            <div class="two">
+              <div class="field"><label for="qNm">Name</label><input id="qNm" autocomplete="name" placeholder="Your name"><div class="err">Required</div></div>
+              <div class="field"><label for="qEm">Email</label><input id="qEm" type="email" autocomplete="email" placeholder="you@domain.com"><div class="err">Enter a valid email</div></div>
+            </div>
+            <div class="field"><label for="qSub">Subject</label><input id="qSub" placeholder="The register, sizing, an order…"><div class="err">Required</div></div>
+            <div class="field"><label for="qMsg">Message</label><input id="qMsg" placeholder="Tell us what you need"><div class="err">Required</div></div>
+          </div>
+          <button class="btn solid" id="qSend" style="margin-top:34px"><span>Send the message</span></button>
+        </div>
+        <div id="cSent" hidden>
+          <div class="cSent">
+            <div class="eyebrow" style="justify-content:center">Received</div>
+            <div class="big">Thank you — it is with us.</div>
+            <p class="empty" id="cSentTo"></p>
+            <div style="margin-top:32px"><button class="link" id="cAgain">Write another</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="fGrid">
+    <div class="fCol">
+      <div class="fMark">YS</div>
+      <div class="fLine">It appears when the light does.</div>
+    </div>
+    <div class="fCol">
+      <h5>The piece</h5>
+      <a href="#length">The Length</a><a href="#faces">Double-Face</a>
+      <a href="#mark">The Mark</a><a href="#house">The Cloth</a>
+    </div>
+    <div class="fCol">
+      <h5>The house</h5>
+      <a href="#contact">Contact</a>
+      <a href="/legal/terms.html">Terms</a>
+      <a href="/legal/privacy.html">Privacy</a>
+      <a href="/legal/shipping-returns.html">Shipping &amp; returns</a>
+      <a href="/legal/imprint.html">Imprint</a>
+      <a href="mailto:register@ysnewyork.com">The register</a>
+      <a href="mailto:press@ysnewyork.com">Press</a>
+      <span>Made in Zürich, Switzerland</span>
+      <span>Dry clean only · Never brushed</span>
+    </div>
+    <div class="fCol">
+      <h5>Reach us</h5>
+      <a href="mailto:hello@ysnewyork.com">hello@ysnewyork.com</a>
+      <a href="tel:+12125550142">+1 212 555 0142</a>
+      <span>Monday—Friday, 10—18 EST</span>
+      <span>Atelier, Zürich · by appointment</span>
+    </div>
+  </div>
+  <div class="fBase">
+    <span>&copy; YS New York</span>
+    <span>YS-SC-002 · Made in Zürich, Switzerland</span>
+    <span>ysnewyork.com</span>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+
+<section class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="L'Écharpe Monogramme">
+  <button class="close" id="closeSheet">Close</button>
+  <div class="sheetIn">
+    <div>
+      <div class="cloth lightable" data-scarf="A" id="sheetScarf"></div>
+      <div class="cap" style="margin-top:14px;display:flex;justify-content:space-between">
+        <span id="sheetFace">Face A</span><button class="link" id="sheetFlip">Turn</button></div>
+    </div>
+    <div>
+      <div class="eyebrow" style="margin-bottom:18px">YS-SC-002 · Rev B</div>
+      <h2 class="pTitle">L'Écharpe Monogramme</h2>
+      <div class="pSub">woven double-face · tonal monogram</div>
+      <div class="pPrice">$580</div>
+      <div class="ways" id="ways"></div>
+      <div class="swName" id="swName">Colourway 01 — Marine Sombre / Marine Clair</div>
+      <div class="assign">
+        <div><small>Your number</small><div class="num">N° <i id="assigned">—</i></div></div>
+        <small style="text-align:right;max-width:20ch;line-height:2" id="remain">of one hundred</small>
+      </div>
+      <button class="btn solid" id="add" style="width:100%;text-align:center"><span>Reserve this number</span></button>
+      <ul class="pList">
+        <li><span>Size</span><b>195 × 35 cm</b></li>
+        <li><span>Cloth</span><b>Double-face, backed twill</b></li>
+        <li><span>Edge</span><b>Hand-whipped, 3 mm</b></li>
+        <li><span>Number</span><b>Written by hand on the care label</b></li>
+        <li><span>Origin</span><b>Made in Zürich, Switzerland</b></li>
+        <li><span>Care</span><b>Dry clean only</b></li>
+        <li><span>Delivery</span><b>Four weeks, insured</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Register">
+  <div class="dHead"><h3>The Register</h3><button class="link" id="closeCart">Close</button></div>
+  <div class="dBody" id="dBody"></div>
+  <div class="dFoot" id="dFoot" hidden>
+    <div class="row"><span>Pieces</span><span id="qty">0</span></div>
+    <div class="row total"><span>Subtotal</span><span id="subtotal">$0</span></div>
+    <button class="btn solid" id="toCheckout"><span>Checkout</span></button>
+    <div class="fine">Numbers are held 48 hours</div>
+  </div>
+</aside>
+
+<div class="dialog" id="acct" role="dialog" aria-modal="true" aria-label="Account">
+  <div class="dialogIn">
+    <div class="dTop"><h3 id="acctTitle">Your account</h3><button class="link" id="closeAcct">Close</button></div>
+
+    <div id="acctOut">
+      <div class="tpane on" data-tp="in">
+        <div class="fields">
+          <div class="field"><label for="siEm">Email</label><input id="siEm" type="email" autocomplete="email" placeholder="you@domain.com"><div class="err">Enter a valid email</div></div>
+          <div class="field"><label for="siPw">Password</label><input id="siPw" type="password" autocomplete="current-password" placeholder="••••••••"><div class="err">Required</div></div>
+        </div>
+        <button class="btn solid" id="signIn" style="width:100%;text-align:center;margin-top:30px"><span>Sign in</span></button>
+        <div class="msg" id="siMsg"></div>
+        <div style="text-align:center;margin-top:26px">
+          <button class="link" id="toCreate">New to the house? Create an account</button>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+    <div id="acctIn" hidden>
+      <div class="who">
+        <div class="init" id="acctInit">—</div>
+        <div><div class="nm" id="acctName"></div><div class="em" id="acctEmail"></div></div>
+      </div>
+      <div class="eyebrow" style="margin:30px 0 6px">Your numbers</div>
+      <div id="acctNums"></div>
+      <button class="btn" id="signOut" style="width:100%;text-align:center;margin-top:30px"><span>Sign out</span></button>
+    </div>
+  </div>
+</div>
+
+<section class="checkout" id="createPage" role="dialog" aria-modal="true" aria-label="Create account">
+  <div class="coHead"><span class="mark" style="cursor:default">YS</span>
+    <button class="link" id="closeCreate">Back to the house</button></div>
+  <div class="createIn">
+    <div class="eyebrow" style="justify-content:center">The register</div>
+    <h2 class="pTitle" style="text-align:center">Open an account.</h2>
+    <p class="createLede">One account, one register. Your numbers, your orders, and first word
+    when an edition opens — nothing else, and never a mailing you didn't ask for.</p>
+    <div style="margin-top:44px">
+        <div class="fields">
+          <div class="two">
+            <div class="field"><label for="nuFn">First name</label><input id="nuFn" autocomplete="given-name" placeholder="Vittoria"><div class="err">Required</div></div>
+            <div class="field"><label for="nuLn">Last name</label><input id="nuLn" autocomplete="family-name" placeholder="Severini"><div class="err">Required</div></div>
+          </div>
+          <div class="field"><label for="nuEm">Email</label><input id="nuEm" type="email" autocomplete="email" placeholder="you@domain.com"><div class="err">Enter a valid email</div></div>
+          <div class="field"><label for="nuPw">Password</label><input id="nuPw" type="password" autocomplete="new-password" placeholder="Eight characters or more"><div class="err">Eight characters or more</div></div>
+          <div class="field"><label for="nuPw2">Repeat password</label><input id="nuPw2" type="password" autocomplete="new-password" placeholder="••••••••"><div class="err">The two do not match</div></div>
+        </div>
+        <button class="btn solid" id="createAcct" style="width:100%;text-align:center;margin-top:30px"><span>Create account</span></button>
+        <div class="msg" id="nuMsg"></div>
+      
+    </div>
+    <div style="text-align:center;margin-top:30px">
+      <button class="link" id="toSignIn">Already in the register? Sign in</button>
+    </div>
+  </div>
+</section>
+
+<section class="checkout" id="checkout" role="dialog" aria-modal="true" aria-label="Checkout">
+  <div class="coHead"><span class="mark" style="cursor:default">YS</span>
+    <button class="link" id="closeCo">Back to the register</button></div>
+
+  <div class="coIn" id="coIn">
+    <div>
+      <div class="steps" id="steps">
+        <button class="step now" data-i="0"><b>01</b>Contact</button>
+        <button class="step" data-i="1"><b>02</b>Delivery</button>
+        <button class="step" data-i="2"><b>03</b>Payment</button>
+      </div>
+
+      <div class="pane on" data-p="0">
+        <h3 class="paneTitle">Who is it for?</h3>
+        <div class="fields">
+          <div class="two">
+            <div class="field"><label for="fn">First name</label><input id="fn" autocomplete="given-name" placeholder="Vittoria"><div class="err">Required</div></div>
+            <div class="field"><label for="ln">Last name</label><input id="ln" autocomplete="family-name" placeholder="Severini"><div class="err">Required</div></div>
+          </div>
+          <div class="field"><label for="em">Email</label><input id="em" type="email" autocomplete="email" placeholder="you@domain.com"><div class="err">Enter a valid email</div></div>
+          <div class="field"><label for="ph">Telephone</label><input id="ph" type="tel" autocomplete="tel" placeholder="Optional"></div>
+        </div>
+        <div class="coNav"><button class="btn solid" data-next="1"><span>Continue to delivery</span></button></div>
+      </div>
+
+      <div class="pane" data-p="1">
+        <h3 class="paneTitle">Where should it be sent?</h3>
+        <div class="fields">
+          <div class="field"><label for="a1">Address</label><input id="a1" autocomplete="address-line1" placeholder="Street and number"><div class="err">Required</div></div>
+          <div class="field"><label for="a2">Apartment</label><input id="a2" autocomplete="address-line2" placeholder="Optional"></div>
+          <div class="three">
+            <div class="field"><label for="ct">City</label><input id="ct" autocomplete="address-level2" placeholder="Ulaanbaatar"><div class="err">Required</div></div>
+            <div class="field"><label for="pc">Postal code</label><input id="pc" autocomplete="postal-code" placeholder="14200"><div class="err">Required</div></div>
+            <div class="field"><label for="co">Country</label><input id="co" autocomplete="country-name" placeholder="Mongolia"><div class="err">Required</div></div>
+          </div>
+        </div>
+        <div class="ships" id="ships" role="radiogroup" aria-label="Delivery">
+          <div class="ship" role="radio" aria-checked="true" data-ship="0" tabindex="0">
+            <div><div class="n">Insured, four weeks</div><div class="d">Hemmed and numbered to order</div></div><div class="c">Complimentary</div></div>
+          <div class="ship" role="radio" aria-checked="false" data-ship="1" tabindex="0">
+            <div><div class="n">Express, ten days</div><div class="d">From finished stock</div></div><div class="c">$40</div></div>
+        </div>
+        <div class="coNav"><button class="btn solid" data-next="2"><span>Continue to payment</span></button>
+          <button class="link" data-next="0">Back</button></div>
+      </div>
+
+      <div class="pane" data-p="2">
+        <h3 class="paneTitle">Payment</h3>
+        <div class="note" id="liveNote" hidden>Payment is taken on Stripe's secure page — you will be
+        redirected when you place the order. No card details are entered here.</div>
+      <div class="fields" id="card">
+          <div class="field"><label for="cn">Card number</label><input id="cn" inputmode="numeric" autocomplete="cc-number" placeholder="0000 0000 0000 0000"><div class="err">Check the card number</div></div>
+          <div class="two">
+            <div class="field"><label for="cx">Expiry</label><input id="cx" inputmode="numeric" autocomplete="cc-exp" placeholder="MM / YY"><div class="err">Check the expiry</div></div>
+            <div class="field"><label for="cv">Security code</label><input id="cv" inputmode="numeric" autocomplete="cc-csc" placeholder="123"><div class="err">3 or 4 digits</div></div>
+          </div>
+          <div class="field"><label for="cnm">Name on card</label><input id="cnm" autocomplete="cc-name" placeholder="As printed"><div class="err">Required</div></div>
+        </div>
+        <div class="note">Demo build — no payment is taken and no card data leaves this page. Mount Stripe Elements on <b>#card</b> to go live.</div>
+        <div class="coNav"><button class="btn solid" id="pay"><span>Place the order</span></button>
+          <button class="link" data-next="1">Back</button></div>
+      </div>
+    </div>
+
+    <aside class="summary">
+      <h4>Your register</h4>
+      <div id="sItems"></div>
+      <div class="promo"><input id="promo" placeholder="Promotion code"><button id="applyPromo">Apply</button></div>
+      <div class="promoMsg" id="promoMsg"></div>
+      <div style="margin-top:22px">
+        <div class="row"><span>Subtotal</span><span id="coSub">$0</span></div>
+        <div class="row" id="discRow" hidden><span>Monogramme · 10%</span><span id="coDisc">—$0</span></div>
+        <div class="row"><span>Delivery</span><span id="coShip">Complimentary</span></div>
+        <div class="row"><span>Duties & tax</span><span>At destination</span></div>
+        <div class="row total"><span>Total</span><span id="coTotal">$0</span></div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="thanks" id="thanks" hidden>
+    <div class="eyebrow" style="justify-content:center">Entered in the register</div>
+    <div class="big">Your number is being written.</div>
+    <div class="nums" id="thNums"></div>
+    <p class="empty" id="thMail"></p>
+    <div class="ord" id="thOrd"></div>
+    <div style="margin-top:40px"><button class="btn" id="thDone"><span>Return to the house</span></button></div>
+  </div>
+</section>
+
+<script>
+/* ══════════════ LAUNCH CONFIG — edit this block, nothing else ══════════════
+   API_BASE  : your register server, e.g. "https://api.ysnewyork.com".
+               Leave "" and the site runs self-contained in demo mode.
+   CONTACT   : replace every placeholder before going live.               */
+const CONFIG = {
+  API_BASE: "",
+  EMAIL_HELLO:    "hello@ysnewyork.com",      // PLACEHOLDER — replace
+  EMAIL_REGISTER: "register@ysnewyork.com",   // PLACEHOLDER — replace
+  EMAIL_PRESS:    "press@ysnewyork.com",      // PLACEHOLDER — replace
+  PHONE:          "+1 212 555 0142",          // PLACEHOLDER — fake range, replace
+  PHONE_HREF:     "+12125550142"
+};
+/* ═══════════════════════════════════════════════════════════════════════ */
+(function(){
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const coarse=matchMedia('(pointer: coarse)').matches;
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+
+const C={sombre:'#060B18', clair:'#1F2C45', lit:'#3B5279', faceB:'#0C1526', pearl:'#243350', pearlLit:'#4E668F'};
+const PRICE=580, TOTAL=100;
+let taken=7;
+const cart=[];
+const fmt=n=>'$'+n.toLocaleString('en-US');
+const pad=n=>String(n).padStart(3,'0');
+const left=()=>TOTAL-taken;
+
+/* ══ the glyph: Y and S share one junction ══
+   thick on every downstroke, hairline on every rise. 1 unit = 1 mm. */
+const GLYPH=`
+<path d="M-6.132 -8.586 L0 0" stroke-width="1.596"/>
+<path d="M6.133 -8.586 L0 0" stroke-width="0.921"/>
+<path d="M0 0 L-1.226 8.586" stroke-width="1.473"/>
+<path d="M-1.226 8.586 C-2.453 11.652,-4.905 12.878,-6.745 11.652" stroke-width="0.737"/>
+<path d="M12.267 -6.746 C9.814 -9.2,4.907 -9.813,2.454 -7.36" stroke-width="0.737"/>
+<path d="M2.454 -7.36 C0.614 -4.907,2.454 -2.453,6.133 -0.614" stroke-width="1.473"/>
+<path d="M6.133 -0.614 C9.814 1.226,11.04 4.907,7.36 7.359" stroke-width="1.473"/>
+<path d="M7.36 7.359 C4.293 9.811,-0.612 9.199,-2.453 6.745" stroke-width="0.737"/>`;
+
+/* The signature. Chancery italic, 6° slant baked into the coordinates.
+   Never set in a font, never redrawn — lifted from the supplied vector.
+   11 mm tall, centred: the height it is woven on the main label. */
+const SIGNATURE=`
+<path d="M-8.463 -4.928 C-7.915 -5.596,-7.046 -5.691,-6.735 -5.023" stroke-width="0.124"/>
+<path d="M-6.735 -5.023 C-6.317 -2.637,-5.298 -0.538,-3.731 0.893" stroke-width="0.611"/>
+<path d="M1.14 -5.5 C-0.447 -3.114,-2.014 -0.92,-3.731 0.893" stroke-width="0.162"/>
+<path d="M-3.731 0.893 C-4.188 2.516,-4.805 3.851,-5.668 4.805" stroke-width="0.554"/>
+<path d="M-5.668 4.805 C-6.417 5.569,-7.487 5.76,-7.989 5.092" stroke-width="0.134"/>
+<path d="M8.463 -4.355 C7.725 -5.5,5.178 -5.787,3.827 -4.737" stroke-width="0.172"/>
+<path d="M3.827 -4.737 C2.752 -3.591,3.586 -2.447,5.118 -1.588" stroke-width="0.592"/>
+<path d="M5.118 -1.588 C6.745 -0.729,7.158 0.797,5.606 1.943" stroke-width="0.592"/>
+<path d="M5.606 1.943 C4.256 2.993,1.679 2.993,0.865 1.657" stroke-width="0.172"/>
+<path d="M0.865 1.657 C0.534 1.18,0.594 0.607,0.91 0.321" stroke-width="0.124"/>`;
+
+/* repeat: 4.4 × 5.7 cm · glyph 2.0 cm · pearl 1.4 mm · every second glyph inverted 180° */
+let pid=0;
+function pattern(ink,pearl){
+  const id='p'+(pid++);
+  return {id, def:`<pattern id="${id}" width="44" height="57" patternUnits="userSpaceOnUse" patternTransform="translate(0,4)">
+    <g stroke="${ink}" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <g transform="translate(9.491,12.064)">${GLYPH}</g>
+      <g transform="translate(35.170,43.071) rotate(180)">${GLYPH}</g>
+    </g>
+    <g fill="${pearl}">
+      <circle cx="33.330" cy="11.957" r="0.7"/><circle cx="11.332" cy="41.185" r="0.7"/>
+    </g></pattern>`};
+}
+
+/* ══ build a length of cloth ══ */
+function cloth(el){
+  const face=el.dataset.scarf, full=el.dataset.full;
+  const H=350;
+  // 195x35 cm = 5.571:1. A phone can only show a slice and keep the glyph legible.
+  const W = full ? 1950 : el.classList.contains('thumb') ? 1950 : (narrow()? 620 : 1400);
+  el.style.aspectRatio = W+'/'+H;   // container follows the drawing, never the reverse
+  el.innerHTML='';
+  if(face==='B'){
+    el.innerHTML=`<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" style="aspect-ratio:${W}/${H}">
+      <rect width="${W}" height="${H}" fill="${C.faceB}"/>
+      <g transform="translate(${W-40},${H/2})">
+        <rect x="-40" y="-9" width="40" height="18" fill="${C.sombre}"/>
+        <g transform="translate(-20,-1.5)" stroke="${C.clair}" fill="none"
+           stroke-linecap="round" stroke-linejoin="round">${SIGNATURE}</g>
+        <text x="-20" y="7" text-anchor="middle" font-family="Jost, sans-serif" font-size="2"
+          letter-spacing="1.1" fill="#33456A">NEW YORK</text>
+      </g></svg>
+      <div class="twill"></div><div class="sheen"></div>`;
+    return;
+  }
+  const base=pattern(C.clair,C.pearl), hi=pattern(C.lit,C.pearlLit);
+  const svg=(p,cls)=>`<svg class="${cls}" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" style="aspect-ratio:${W}/${H}">
+    <defs>${p.def}</defs><rect width="${W}" height="${H}" fill="${cls==='mono'?C.sombre:'none'}"/>
+    <rect width="${W}" height="${H}" fill="url(#${p.id})"/></svg>`;
+  el.innerHTML = svg(base,'mono')
+    + `<div class="lay lit">${svg(hi,'hi')}</div>`
+    + (full?`<svg viewBox="0 0 ${W} ${H}" class="lay" preserveAspectRatio="none" style="pointer-events:none">
+        <g transform="translate(${W-40},${H/2})">
+          <rect x="-40" y="-9" width="40" height="18" fill="none" stroke="#1B2740" stroke-width="0.4"/>
+        </g></svg>`:'')
+    + `<div class="twill"></div><div class="sheen"></div>`;
+  el.querySelector('.lit svg').style.position='absolute';
+  el.querySelector('.lit svg').style.inset='0';
+}
+
+/* ══ light: the reflection that makes the glyph appear ══ */
+const LIT=[]; let tilting=false;
+function lightable(el){
+  let lx=50, target=50, idle=true, t=Math.random()*6.28;
+  const set=v=>el.style.setProperty('--lx',v.toFixed(2)+'%');
+  function frame(){
+    if(!el.isConnected) return;
+    const drift = idle && !tilting;
+    if(drift){ t+=0.0042; target=50+Math.sin(t)*46; }
+    lx+=(target-lx)*(drift?0.06:0.1);
+    set(lx);
+    requestAnimationFrame(frame);
+  }
+  el._aim=v=>{ target=v; idle=false; };
+  el._val=()=>lx;
+  el._free=()=>{ idle=true; t=Math.asin(Math.max(-1,Math.min(1,(lx-50)/46))); };
+  if(!reduce) requestAnimationFrame(frame); else set(50);
+  // pointermove covers finger drags too — touch-action:pan-y keeps vertical scroll
+  el.addEventListener('pointermove',e=>{
+    const r=el.getBoundingClientRect();
+    el._aim(((e.clientX-r.left)/r.width)*100);
+  },{passive:true});
+  el.addEventListener('pointerleave',()=>el._free());
+  LIT.push(el);
+}
+// tilting the phone rakes the light across every length of cloth at once
+function onTilt(e){
+  if(e.gamma==null) return;
+  tilting=true;
+  const v=50+Math.max(-1,Math.min(1,e.gamma/30))*48;
+  for(let i=LIT.length-1;i>=0;i--){
+    const el=LIT[i]; if(!el.isConnected) LIT.splice(i,1); else el._aim(v);
+  }
+}
+const narrow=()=>matchMedia('(max-width:760px)').matches;
+
+$$('.lightable').forEach(el=>{ cloth(el); lightable(el); });
+
+matchMedia('(max-width:760px)').addEventListener('change',()=>{
+  LIT.forEach(el=>{ if(el.isConnected) cloth(el); });
+});
+
+if(coarse && !reduce){
+  const DOE=window.DeviceOrientationEvent;
+  if(DOE && typeof DOE.requestPermission==='function'){
+    const cue=$('#tiltCue'); cue.hidden=false;
+    cue.onclick=()=>DOE.requestPermission().then(st=>{
+      if(st==='granted'){ addEventListener('deviceorientation',onTilt); cue.hidden=true; }
+    }).catch(()=>{});
+  } else if(DOE){ addEventListener('deviceorientation',onTilt); }
+}
+
+(function menu(){
+  const p=$('#menuPanel');
+  const close=()=>{ p.classList.remove('on'); document.body.classList.remove('locked'); };
+  $('#menuBtn').onclick=()=>{ p.classList.add('on'); document.body.classList.add('locked'); };
+  $('#menuClose').onclick=close;
+  $$('#menuPanel a').forEach(a=>a.onclick=close);
+})();
+
+/* ══ the scan: 195 cm travels past you ══ */
+(function scan(){
+  const wrap=$('#length'), move=$('#scanMove'), pct=$('#scanPct');
+  if(reduce) return;
+  let raf=0;
+  const tick=()=>{
+    const r=wrap.getBoundingClientRect();
+    const p=Math.min(1,Math.max(0,-r.top/(r.height-innerHeight)));
+    move.style.transform=`translateX(${(-p*(move.offsetWidth-innerWidth)).toFixed(1)}px)`;
+    pct.textContent=Math.round(p*195)+' cm';
+    raf=0;
+  };
+  addEventListener('scroll',()=>{ if(!raf) raf=requestAnimationFrame(tick); },{passive:true});
+  addEventListener('resize',tick); tick();
+})();
+
+/* ══ double-face ══ */
+(function faces(){
+  const inner=$('#flipInner'), btn=$('#flipBtn'), lab=$('#faceLabel');
+  let turned=false;
+  const go=()=>{ turned=!turned; inner.classList.toggle('turned',turned);
+    btn.textContent = turned?'Turn back':'Turn the cloth';
+    setTimeout(()=>lab.textContent = turned?'Face B — solid, Marine Sombre':'Face A — monogram, tonal',420); };
+  btn.onclick=go; inner.onclick=go;
+})();
+
+/* ══ one repeat, magnified ══ */
+(function plate(){
+  const p=pattern(C.clair,C.pearl), h=pattern(C.lit,C.pearlLit);
+  $('#repeatSq').innerHTML=`<defs>${p.def}${h.def}</defs>
+    <rect width="88" height="114" fill="${C.sombre}"/>
+    <rect width="88" height="114" fill="url(#${p.id})"/>
+    <g opacity=".85"><rect x="22" y="28.5" width="44" height="57" fill="none" stroke="#4E668F"
+      stroke-width="0.35" stroke-dasharray="2 1.6"/></g>
+    <text x="44" y="24" text-anchor="middle" font-family="Bodoni Moda, serif" font-size="3.4"
+      letter-spacing="1.6" fill="#5B7093">ONE FULL REPEAT · 1:1</text>
+    <text x="44" y="94" text-anchor="middle" font-family="Bodoni Moda, serif" font-size="3.4"
+      letter-spacing="1.6" fill="#5B7093">4.4 × 5.7 CM</text>`;
+})();
+
+/* ══ three seasons ══ */
+/* ══ THE DRAPE ══════════════════════════════════════════════════════════
+   One continuous ribbon, not a chain of facets. A spine is traced through 3D
+   space; every quad spans from one spine point to the next and is rotated to
+   lie along that chord, so neighbours share an edge exactly and the cloth
+   cannot come apart. Wind is layered sines travelling down the length, growing
+   toward the free end and breathing on a slow gust.
+
+   Each quad's brightness comes from its angle to the light. brightness() is
+   multiplicative, so the monogram — two shades above the ground — separates
+   where the light rakes and sinks back where it doesn't. The spec, moving.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+const TILE = (()=>{
+  const g=`<g stroke="${C.clair}" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <g transform="translate(9.491,12.064)">${GLYPH}</g>
+      <g transform="translate(35.170,43.071) rotate(180)">${GLYPH}</g></g>
+    <g fill="${C.pearl}"><circle cx="33.330" cy="11.957" r="0.7"/>
+      <circle cx="11.332" cy="41.185" r="0.7"/></g>`;
+  const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="44" height="57" viewBox="0 0 44 57">`
+    +`<rect width="44" height="57" fill="${C.sombre}"/>${g}</svg>`;
+  return 'url("data:image/svg+xml,'+encodeURIComponent(svg)+'")';
+})();
+
+(function drape(){
+  const stage=$('#stage'), world=$('#world');
+  const TAU=Math.PI*2, DEG=57.29578;
+
+  //            wave   depth  twist  fold   loop
+  const STATES={
+    autumn:{amp:15, zamp:30, twist:30, h:1,   loop:0},
+    winter:{amp:9,  zamp:20, twist:38, h:1,   loop:1},
+    spring:{amp:11, zamp:22, twist:20, h:0.5, loop:0}
+  };
+  const COPY=[
+    ['winter','Winter','Doubled at the neck','Doubled twice, tails hanging. The band turns back on itself.'],
+    ['autumn','Autumn','Open, 195 cm','Open, flat down the front of a coat.'],
+    ['spring','Spring','Folded, 17.5 cm','Folded once lengthwise, worn as a band.']
+  ];
+  $('#seasonBtns').innerHTML=COPY.map(([id,h,len,p],i)=>
+    `<button class="sBtn" role="radio" data-s="${id}" aria-checked="${i===1}">
+      <div class="len">${len}</div><h3>${h}</h3><p>${p}</p></button>`).join('');
+
+  let segs=[], SEGN=0, len=0, bandH=0, segW=0, lastH=-1;
+  let cur={...STATES.autumn}, want=STATES.autumn, t=0;
+  let ry=-16, rx=-8, tRy=-16, tRx=-8, drag=false, px=0, py=0;
+
+  function build(){
+    SEGN = narrow()? 28 : 48;          // more spans = a smoother sheen, no banding
+    len  = stage.clientWidth*0.9;
+    bandH= len/5.5715;                 // 195 : 35
+    segW = len/SEGN;
+    world.innerHTML=''; segs=[]; lastH=-1;
+    const tw=(bandH*44/350).toFixed(2), th=(bandH*57/350).toFixed(2);
+    for(let i=0;i<SEGN;i++){
+      const d=document.createElement('div'); d.className='seg';
+      const a=document.createElement('div'); a.className='sfA';
+      const b=document.createElement('div'); b.className='sfB';
+      a.style.backgroundImage=TILE;
+      a.style.backgroundSize=tw+'px '+th+'px';
+      d.append(a,b); world.appendChild(d);
+      segs.push({d,a,b});
+    }
+  }
+
+  // the spine: where the cloth is, at length-fraction u
+  const P=[0,0,0];
+  function spine(u,o){
+    const grow = 0.16 + Math.pow(u,1.25)*0.84;      // anchored near one end, free at the other
+    const gust = 0.7 + 0.22*Math.sin(t*0.33) + 0.08*Math.sin(t*0.19+2.1);
+    const sw = Math.sin(u*4.8 - t*1.15)*0.58 + Math.sin(u*8.4 - t*1.75+1.4)*0.24
+             + Math.sin(u*2.3 - t*0.62)*0.44;
+    const sz = Math.cos(u*4.1 - t*0.98)*0.6 + Math.sin(u*7.3 - t*1.5+0.7)*0.24;
+    const xOpen = -len/2 + u*len;
+    const xLoop = -Math.cos(u*TAU)*len*0.26;        // turns back on itself: one ribbon, doubled
+    const zLoop =  Math.sin(u*TAU)*len*0.085;
+    o[0] = xOpen + (xLoop-xOpen)*cur.loop;
+    o[1] = sw*cur.amp*grow*gust;
+    o[2] = sz*cur.zamp*grow*gust + zLoop*cur.loop;
+    return o;
+  }
+  function roll(u){
+    const grow = 0.16 + Math.pow(u,1.25)*0.84;
+    return (Math.sin(u*3.6 - t*0.88)*0.72 + Math.sin(u*6.6 - t*1.4)*0.28)*cur.twist*grow;
+  }
+
+  stage.addEventListener('pointerdown',e=>{ drag=true; px=e.clientX; py=e.clientY;
+    stage.setPointerCapture(e.pointerId); });
+  stage.addEventListener('pointermove',e=>{
+    if(!drag) return;
+    tRy+=(e.clientX-px)*0.3; tRx=Math.max(-38,Math.min(38,tRx-(e.clientY-py)*0.2));
+    px=e.clientX; py=e.clientY;
+  });
+  addEventListener('pointerup',()=>drag=false);
+  lightable(stage);
+
+  $$('.sBtn').forEach(b=>b.onclick=()=>{
+    want=STATES[b.dataset.s];
+    $$('.sBtn').forEach(x=>x.setAttribute('aria-checked',x===b));
+  });
+
+  const A=[0,0,0], B=[0,0,0];
+  function frame(){
+    if(!reduce) t+=0.0042;                          // slow. cloth is heavy.
+    for(const k in cur) cur[k]+=(want[k]-cur[k])*0.045;
+    ry+=(tRy-ry)*0.07; rx+=(tRx-rx)*0.07;
+    world.style.setProperty('--ry',ry.toFixed(2)+'deg');
+    world.style.setProperty('--rx',rx.toFixed(2)+'deg');
+
+    const h=bandH*cur.h, resize=Math.abs(h-lastH)>0.4; if(resize) lastH=h;
+    const la=((stage._val()-50)/50)*55/DEG;
+    const bgY=(bandH*4/350).toFixed(1)+'px';
+    let arc=0;                                      // distance travelled along the cloth itself
+
+    spine(0,A);
+    for(let i=0;i<SEGN;i++){
+      const s=segs[i];
+      spine((i+1)/SEGN,B);
+      const dx=B[0]-A[0], dy=B[1]-A[1], dz=B[2]-A[2];
+      const hyp=Math.sqrt(dx*dx+dz*dz);
+      const L=Math.sqrt(hyp*hyp+dy*dy);
+      const yaw=Math.atan2(-dz,dx)*DEG;             // align the quad's length to the chord
+      const pit=Math.atan2(dy,hyp)*DEG;
+      const rl =roll((i+0.5)/SEGN);
+
+      if(resize){ s.d.style.height=h+'px'; s.d.style.marginTop=(-h/2)+'px'; }
+      s.d.style.width=(L+0.9)+'px';                 // hairline overlap closes the seam
+      s.d.style.transform=`translate3d(${A[0].toFixed(2)}px,${A[1].toFixed(2)}px,${A[2].toFixed(2)}px) `
+        +`rotateY(${yaw.toFixed(2)}deg) rotateZ(${pit.toFixed(2)}deg) rotateX(${rl.toFixed(2)}deg)`;
+
+      const n=(yaw/DEG) + Math.sin(rl/DEG)*0.35;    // facet normal, yaw plus a little roll
+      const spec=Math.pow(Math.max(0,Math.cos(n-la)),5);
+      const v=0.72+spec*1.95;
+      s.a.style.filter=`brightness(${v.toFixed(3)})`;
+      s.b.style.filter=`brightness(${(v*0.85).toFixed(3)})`;
+      s.a.style.backgroundPosition=(-arc).toFixed(1)+'px '+bgY;
+      arc+=L;                                       // inextensible: texture follows the cloth
+
+      A[0]=B[0]; A[1]=B[1]; A[2]=B[2];
+    }
+    requestAnimationFrame(frame);
+  }
+
+  build(); frame();
+  let rz; addEventListener('resize',()=>{ clearTimeout(rz); rz=setTimeout(build,220); });
+})();
+
+/* ══ product sheet ══ */
+const scrim=$('#scrim'), sheet=$('#sheet'), drawer=$('#drawer'), checkout=$('#checkout');
+let pending=null;
+
+(function ways(){
+  const box=$('#ways');
+  const a=document.createElement('button');
+  a.className='sw'; a.type='button'; a.setAttribute('role','radio'); a.setAttribute('aria-checked','true');
+  a.title='Marine Sombre / Marine Clair';
+  a.style.background=`linear-gradient(105deg,${C.sombre} 0 48%,${C.clairAlt||'#2A3A57'} 52% 100%)`;
+  const b=document.createElement('button');
+  b.className='sw'; b.type='button'; b.setAttribute('role','radio'); b.disabled=true;
+  b.title='Colourway 02 — held for season two';
+  b.style.background='repeating-linear-gradient(63deg,#C9C3B6 0 3px,#DAD5C8 3px 6px)';
+  b.onmouseenter=()=>$('#swName').textContent='Colourway 02 — held for season two';
+  b.onmouseleave=()=>$('#swName').textContent='Colourway 01 — Marine Sombre / Marine Clair';
+  box.append(a,b);
+})();
+
+(function sheetFlip(){
+  const el=$('#sheetScarf'), lab=$('#sheetFace'), btn=$('#sheetFlip');
+  btn.onclick=()=>{
+    const to = el.dataset.scarf==='A' ? 'B' : 'A';
+    el.style.transition='opacity .5s'; el.style.opacity=0;
+    setTimeout(()=>{ el.dataset.scarf=to; cloth(el); el.style.opacity=1;
+      lab.textContent = to==='A' ? 'Face A' : 'Face B'; },380);
+  };
+})();
+
+function odometer(el,to){
+  if(reduce||to==null){ el.textContent=to==null?'—':pad(to); return; }
+  const t0=performance.now(), from=Math.max(1,to-22);
+  (function tick(t){ const k=Math.min(1,(t-t0)/720), e=1-Math.pow(1-k,4);
+    el.textContent=pad(Math.round(from+(to-from)*e)); if(k<1) requestAnimationFrame(tick); })(t0);
+}
+function refreshSheet(){
+  const n=left();
+  pending = n>0 ? taken+1 : null;
+  odometer($('#assigned'),pending);
+  $('#remain').textContent = n>0 ? `${n} of one hundred remain` : 'The edition is closed';
+  const add=$('#add');
+  add.disabled = n<=0;
+  add.querySelector('span').textContent = n<=0?'Spoken for':'Reserve this number';
+}
+const openSheet=()=>{ refreshSheet(); scrim.classList.add('on'); sheet.classList.add('on'); document.body.classList.add('locked'); };
+const closeSheet=()=>{ sheet.classList.remove('on'); if(!drawer.classList.contains('on')){scrim.classList.remove('on');document.body.classList.remove('locked');} };
+$('#closeSheet').onclick=closeSheet; $('#heroBuy').onclick=openSheet;
+
+/* ══ register ══ */
+const openCart=()=>{ drawer.classList.add('on'); scrim.classList.add('on'); document.body.classList.add('locked'); };
+const closeCart=()=>{ drawer.classList.remove('on'); if(!sheet.classList.contains('on')){scrim.classList.remove('on');document.body.classList.remove('locked');} };
+$('#openCart').onclick=openCart; $('#closeCart').onclick=closeCart;
+scrim.onclick=()=>{closeSheet();closeCart();};
+addEventListener('keydown',e=>{
+  if(e.key!=='Escape') return;
+  if($('#createPage').classList.contains('on')){ closeCreate(); return; }
+  if($('#acct').classList.contains('on')){ closeAcct(); return; }
+  if(!checkout.classList.contains('on')){ closeSheet(); closeCart(); }
+});
+
+$('#add').onclick=async()=>{
+  if(pending==null) return;
+  if(api.live){
+    try{
+      const h=await api.call('/api/holds',{method:'POST'});
+      taken++; cart.push({num:h.n,price:PRICE,hold:h.hold_token});
+      refreshSheet(); render();
+      const c=$('#count'); c.classList.add('pop'); setTimeout(()=>c.classList.remove('pop'),820);
+      closeSheet(); setTimeout(openCart,440);
+    }catch(e){ if(e.server){ $('#remain').textContent=e.message; refreshSheet(); } }
+    return;
+  }
+  taken++; cart.push({num:pending,price:PRICE});
+  refreshSheet(); render();
+  const c=$('#count'); c.classList.add('pop'); setTimeout(()=>c.classList.remove('pop'),820);
+  closeSheet(); setTimeout(openCart,440);
+};
+
+function thumb(container){
+  const d=document.createElement('div'); d.className='thumb lightable'; d.dataset.scarf='A';
+  container.prepend(d); cloth(d); lightable(d);
+}
+const subtotal=()=>cart.reduce((s,c)=>s+c.price,0);
+function render(){
+  $('#count').textContent=cart.length; $('#qty').textContent=cart.length;
+  $('#subtotal').textContent=fmt(subtotal()); $('#dFoot').hidden=!cart.length;
+  const body=$('#dBody');
+  if(!cart.length){ body.innerHTML=`<p class="empty">No number reserved yet.<br><br>One hundred pieces. Each number is written by hand on the care label after the cloth is finished.</p>`; return; }
+  body.innerHTML='';
+  cart.forEach((c,i)=>{
+    const el=document.createElement('div'); el.className='item';
+    el.innerHTML=`<div><h4>L'Écharpe Monogramme</h4><small>N° ${pad(c.num)} / 100</small>
+      <button class="rm">Release</button></div><div class="p">${fmt(c.price)}</div>`;
+    thumb(el);
+    el.querySelector('.rm').onclick=()=>{
+      if(api.live&&c.hold) api.call('/api/holds/'+c.hold,{method:'DELETE'}).catch(()=>{});
+      taken--; cart.splice(i,1); refreshSheet(); render(); };
+    body.appendChild(el);
+  });
+}
+render();
+
+  /* ══ the account ══
+   In-memory only. Accounts and sessions must move to a server before launch —
+   see the note at the foot of this file. Passwords are never stored in plain text there. */
+const accounts=[]; let me=null; let meToken=null;
+
+/* ══ API layer. Every call falls back to the in-page demo if the server
+      is unreachable, so the file works standalone and comes alive the
+      moment CONFIG.API_BASE is set. ══ */
+const api = {
+  live: false,
+  async call(path, opts={}){
+    if(!CONFIG.API_BASE) throw new Error('demo');
+    const headers={'Content-Type':'application/json', ...(opts.headers||{})};
+    if(meToken) headers.Authorization='Bearer '+meToken;
+    const r=await fetch(CONFIG.API_BASE+path,{...opts,headers,
+      body:opts.body?JSON.stringify(opts.body):undefined});
+    const j=await r.json().catch(()=>({}));
+    if(!r.ok) throw Object.assign(new Error(j.error||'Request failed'),{status:r.status,server:true});
+    return j;
+  }
+};
+if(CONFIG.API_BASE){
+  api.call('/api/edition').then(e=>{
+    api.live=true; taken=e.sold+e.held;
+    const c=document.getElementById('card'), ln=document.getElementById('liveNote');
+    if(c) c.hidden=true; if(ln) ln.hidden=false;      // real availability replaces the demo seed
+    refreshSheet&&refreshSheet();
+  }).catch(()=>console.warn('register server unreachable — running in demo mode'));
+}
+
+const acct=$('#acct');
+const openAcct=()=>{ acct.classList.add('on'); document.body.classList.add('locked'); paintAcct(); };
+const closeAcct=()=>{ acct.classList.remove('on');
+  if(!drawer.classList.contains('on')&&!sheet.classList.contains('on')) document.body.classList.remove('locked'); };
+$('#openAcct').onclick=openAcct; $('#closeAcct').onclick=closeAcct;
+acct.addEventListener('pointerdown',e=>{ if(e.target===acct) closeAcct(); });
+
+/* create-account is its own page, checkout-style */
+const createPage=$('#createPage');
+const openCreate=()=>{ closeAcct(); createPage.classList.add('on'); document.body.classList.add('locked'); };
+const closeCreate=()=>{ createPage.classList.remove('on'); document.body.classList.remove('locked'); };
+$('#toCreate').onclick=openCreate;
+$('#closeCreate').onclick=closeCreate;
+$('#toSignIn').onclick=()=>{ closeCreate(); openAcct(); };
+if(location.hash==='#join') setTimeout(openCreate,600);
+
+const EMAIL=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+const say=(el,txt,ok)=>{ el.textContent=txt; el.classList.toggle('ok',!!ok); };
+
+function paintAcct(){
+  const out=$('#acctOut'), inn=$('#acctIn');
+  if(!me){ out.hidden=false; inn.hidden=true; $('#acctTitle').textContent='Your account'; return; }
+  out.hidden=true; inn.hidden=false;
+  $('#acctTitle').textContent='Your account';
+  $('#acctInit').textContent=(me.fn[0]+me.ln[0]).toUpperCase();
+  $('#acctName').textContent=me.fn+' '+me.ln;
+  $('#acctEmail').textContent=me.email;
+  const box=$('#acctNums');
+  box.innerHTML = me.numbers.length
+    ? me.numbers.map(o=>`<div class="mine"><b>N° ${pad(o.num)} / 100</b><span>${o.order}</span></div>`).join('')
+    : '<p class="empty" style="padding:6px 0">No number yet. The register is open.</p>';
+}
+function paintNav(){
+  $('#acctLabel').textContent = me ? me.fn : 'Account';
+}
+
+$('#createAcct').onclick=async()=>{
+  let e=false;
+  e=bad('nuFn',!$('#nuFn').value.trim())||e;
+  e=bad('nuLn',!$('#nuLn').value.trim())||e;
+  e=bad('nuEm',!EMAIL.test($('#nuEm').value))||e;
+  e=bad('nuPw',$('#nuPw').value.length<8)||e;
+  e=bad('nuPw2',$('#nuPw2').value!==$('#nuPw').value||!$('#nuPw2').value)||e;
+  if(e){ say($('#nuMsg'),'Check the fields above'); return; }
+  const email=$('#nuEm').value.trim().toLowerCase();
+  if(api.live){
+    try{
+      const r=await api.call('/api/auth/register',{method:'POST',body:{
+        email, password:$('#nuPw').value, first:$('#nuFn').value.trim(), last:$('#nuLn').value.trim()}});
+      meToken=r.token;
+      me={fn:r.account.first, ln:r.account.last, email:r.account.email, numbers:[]};
+    }catch(e){ say($('#nuMsg'), e.server?e.message:'Could not reach the register'); return; }
+  } else {
+    if(accounts.some(a=>a.email===email)){ say($('#nuMsg'),'That email is already in the register'); return; }
+    me={fn:$('#nuFn').value.trim(), ln:$('#nuLn').value.trim(), email, pw:$('#nuPw').value, numbers:[]};
+    accounts.push(me);
+  }
+  say($('#nuMsg'),'');
+  ['nuFn','nuLn','nuEm','nuPw','nuPw2'].forEach(id=>document.getElementById(id).value='');
+  paintNav(); closeCreate(); openAcct();
+};
+
+$('#signIn').onclick=async()=>{
+  let e=false;
+  e=bad('siEm',!EMAIL.test($('#siEm').value))||e;
+  e=bad('siPw',!$('#siPw').value)||e;
+  if(e) return;
+  if(api.live){
+    try{
+      const r=await api.call('/api/auth/login',{method:'POST',body:{
+        email:$('#siEm').value.trim(), password:$('#siPw').value}});
+      meToken=r.token;
+      me={fn:r.account.first, ln:r.account.last, email:r.account.email, numbers:[]};
+      const my=await api.call('/api/auth/me');
+      me.numbers=my.orders.flatMap(o=>o.numbers.map(num=>({num,order:o.id})));
+    }catch(e){ say($('#siMsg'), e.server?e.message:'Could not reach the register'); return; }
+  } else {
+    const found=accounts.find(a=>a.email===$('#siEm').value.trim().toLowerCase() && a.pw===$('#siPw').value);
+    if(!found){ say($('#siMsg'),'No account with that email and password'); return; }
+    me=found;
+  }
+  say($('#siMsg'),'');
+  $('#siEm').value=''; $('#siPw').value='';
+  paintNav(); paintAcct();
+};
+
+$('#signOut').onclick=()=>{ if(api.live&&meToken) api.call('/api/auth/logout',{method:'POST'}).catch(()=>{}); meToken=null; me=null; paintNav(); paintAcct(); };
+paintNav();
+
+/* ══ contact ══ */
+$('#qSend').onclick=async()=>{
+  let e=false;
+  e=bad('qNm',!$('#qNm').value.trim())||e;
+  e=bad('qEm',!EMAIL.test($('#qEm').value))||e;
+  e=bad('qSub',!$('#qSub').value.trim())||e;
+  e=bad('qMsg',!$('#qMsg').value.trim())||e;
+  if(e) return;
+  if(api.live){
+    try{ await api.call('/api/contact',{method:'POST',body:{
+      name:$('#qNm').value.trim(), email:$('#qEm').value.trim(),
+      subject:$('#qSub').value.trim(), body:$('#qMsg').value.trim()}});
+    }catch(e){ say?0:0; $('#cSentTo').textContent='Could not reach the register — write to '+CONFIG.EMAIL_HELLO; 
+      $('#cForm').hidden=true; $('#cSent').hidden=false; return; }
+  }
+  $('#cSentTo').textContent=`We will write back to ${$('#qEm').value} within two working days.`;
+  $('#cForm').hidden=true; $('#cSent').hidden=false;
+};
+$('#cAgain').onclick=()=>{
+  ['qNm','qEm','qSub','qMsg'].forEach(id=>{
+    const el=document.getElementById(id); el.value=''; el.closest('.field').classList.remove('bad'); });
+  $('#cSent').hidden=true; $('#cForm').hidden=false;
+};
+
+
+/* ══ checkout ══ */
+let step=0, ship=0, disc=0;
+const SHIP=[0,40];
+function coSummary(){
+  const box=$('#sItems'); box.innerHTML='';
+  cart.forEach(c=>{
+    const d=document.createElement('div'); d.className='sItem';
+    d.innerHTML=`<div><div class="n">Monogramme</div><small>N° ${pad(c.num)}</small></div><div class="p">${fmt(c.price)}</div>`;
+    thumb(d); box.appendChild(d);
+  });
+  const sub=subtotal(), dd=Math.round(sub*disc);
+  $('#coSub').textContent=fmt(sub);
+  $('#discRow').hidden=!disc; $('#coDisc').textContent='—'+fmt(dd);
+  $('#coShip').textContent = ship? fmt(40):'Complimentary';
+  $('#coTotal').textContent=fmt(sub-dd+SHIP[ship]);
+}
+function goStep(n){
+  step=n;
+  $$('.step').forEach((s,i)=>{ s.classList.toggle('now',i===n); s.classList.toggle('did',i<n); });
+  $$('.pane').forEach(p=>p.classList.toggle('on',+p.dataset.p===n));
+  $('#coIn').scrollIntoView({block:'start'});
+}
+$$('.step').forEach(s=>s.onclick=()=>{ if(s.classList.contains('did')) goStep(+s.dataset.i); });
+const bad=(id,cond)=>{ document.getElementById(id).closest('.field').classList.toggle('bad',cond); return cond; };
+const luhn=s=>{ let t=0,a=false; for(let i=s.length-1;i>=0;i--){ let d=+s[i]; if(a){d*=2;if(d>9)d-=9;} t+=d; a=!a; } return s.length>=13&&t%10===0; };
+
+$$('[data-next]').forEach(b=>b.onclick=()=>{
+  const to=+b.dataset.next;
+  if(to>step){
+    if(step===0){ let e=false;
+      e=bad('fn',!$('#fn').value.trim())||e; e=bad('ln',!$('#ln').value.trim())||e;
+      e=bad('em',!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test($('#em').value))||e;
+      if(e) return; }
+    if(step===1){ let e=false;
+      ['a1','ct','pc','co'].forEach(id=>{ e=bad(id,!document.getElementById(id).value.trim())||e; });
+      if(e) return; }
+  }
+  goStep(to);
+});
+$$('.ship').forEach(s=>{
+  const pick=()=>{ ship=+s.dataset.ship; $$('.ship').forEach(x=>x.setAttribute('aria-checked',x===s)); coSummary(); };
+  s.onclick=pick; s.onkeydown=e=>{ if(e.key===' '||e.key==='Enter'){e.preventDefault();pick();} };
+});
+$('#cn').addEventListener('input',e=>{ e.target.value=e.target.value.replace(/\D/g,'').slice(0,19).replace(/(.{4})/g,'$1 ').trim(); });
+$('#cx').addEventListener('input',e=>{ const v=e.target.value.replace(/\D/g,'').slice(0,4);
+  e.target.value = v.length>2 ? v.slice(0,2)+' / '+v.slice(2) : v; });
+$('#cv').addEventListener('input',e=>{ e.target.value=e.target.value.replace(/\D/g,'').slice(0,4); });
+
+$('#applyPromo').onclick=()=>{
+  const code=$('#promo').value.trim().toUpperCase(), msg=$('#promoMsg');
+  if(code==='MONOGRAMME'&&!disc){ disc=.10; msg.textContent='Applied — ten percent'; msg.style.color='var(--focus)'; }
+  else if(disc){ msg.textContent='Already applied'; }
+  else { msg.textContent='Not a valid code'; msg.style.color='#8C4A4A'; }
+  coSummary();
+};
+
+$('#pay').onclick=async()=>{
+  if(api.live){
+    // Card details are collected by Stripe's own page, never by this one.
+    let e=false;
+    ['fn','ln','em','a1','ct','pc','co'].forEach(id=>{
+      e=bad(id,!document.getElementById(id).value.trim())||e; });
+    e=bad('em',!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test($('#em').value))||e;
+    if(e){ goStep($('#a1').value.trim()? 0:1); return; }
+    try{
+      const r=await api.call('/api/orders',{method:'POST',body:{
+        holds:cart.map(c=>c.hold),
+        email:$('#em').value.trim(), name:($('#fn').value+' '+$('#ln').value).trim(),
+        address:($('#a1').value+' '+$('#a2').value).trim(),
+        city:$('#ct').value.trim(), country:$('#co').value.trim(),
+        ship: ship? 'express':'standard'}});
+      if(r.checkout_url){ location.href=r.checkout_url; return; }
+      // server in demo mode: confirmed instantly
+      const nums=cart.map(c=>pad(c.num)).join(' · ');
+      if(me) cart.forEach(c=>me.numbers.push({num:c.num,order:r.order_id}));
+      $('#thNums').textContent='N° '+nums+' / 100';
+      $('#thMail').textContent=`A confirmation has been sent to ${$('#em').value}.`;
+      $('#thOrd').textContent='Order '+r.order_id;
+      $('#coIn').hidden=true; $('#thanks').hidden=false;
+      cart.length=0; render();
+    }catch(e2){
+      $('#coShip').textContent = e2.server? '—' : $('#coShip').textContent;
+      alert(e2.server? e2.message : 'Could not reach the register. Nothing was charged.');
+    }
+    return;
+  }
+  let e=false;
+  e=bad('cn',!luhn($('#cn').value.replace(/\s/g,'')))||e;
+  const mm=+$('#cx').value.slice(0,2), yy=+$('#cx').value.slice(-2), y0=new Date().getFullYear()%100;
+  e=bad('cx',!(mm>=1&&mm<=12&&yy>=y0))||e;
+  e=bad('cv',$('#cv').value.length<3)||e;
+  e=bad('cnm',!$('#cnm').value.trim())||e;
+  if(e) return;
+  const nums=cart.map(c=>pad(c.num)).join(' · ');
+  const ord='YS-'+String(Math.floor(1000+Math.random()*8999));
+  if(me) cart.forEach(c=>me.numbers.push({num:c.num,order:ord}));
+  $('#thNums').textContent='N° '+nums+' / 100';
+  $('#thMail').textContent=`A confirmation has been sent to ${$('#em').value}. Woven and hand-whipped to order — ${ship?'ten days':'four weeks'} to ${$('#ct').value}.`;
+  $('#thOrd').textContent='Order '+ord;
+  $('#coIn').hidden=true; $('#thanks').hidden=false;
+  cart.length=0; render();
+};
+$('#toCheckout').onclick=()=>{
+  if(me){ $('#fn').value=me.fn; $('#ln').value=me.ln; $('#em').value=me.email; }
+  coSummary(); goStep(0); $('#coIn').hidden=false; $('#thanks').hidden=true;
+  checkout.classList.add('on'); document.body.classList.add('locked'); closeCart(); scrim.classList.remove('on');
+};
+const closeCo=()=>{ checkout.classList.remove('on'); document.body.classList.remove('locked'); };
+$('#closeCo').onclick=()=>{ closeCo(); if(cart.length) openCart(); };
+$('#thDone').onclick=closeCo;
+
+/* apply CONFIG contact details everywhere */
+(function contacts(){
+  document.querySelectorAll('a[href^="mailto:hello@"]').forEach(a=>{
+    a.href='mailto:'+CONFIG.EMAIL_HELLO; if(a.textContent.includes('@')) a.textContent=CONFIG.EMAIL_HELLO; });
+  document.querySelectorAll('a[href^="mailto:register@"]').forEach(a=>{
+    a.href='mailto:'+CONFIG.EMAIL_REGISTER; if(a.textContent.includes('@')) a.textContent=CONFIG.EMAIL_REGISTER; });
+  document.querySelectorAll('a[href^="mailto:press@"]').forEach(a=>{
+    a.href='mailto:'+CONFIG.EMAIL_PRESS; if(a.textContent.includes('@')) a.textContent=CONFIG.EMAIL_PRESS; });
+  document.querySelectorAll('a[href^="tel:"]').forEach(a=>{
+    a.href='tel:'+CONFIG.PHONE_HREF; a.textContent=CONFIG.PHONE; });
+})();
+
+/* ══ the plate drifts as you pass it ══ */
+(function plateParallax(){
+  const img=$('#atelierImg'); if(!img||reduce) return;
+  const frame=img.closest('.plateImg'); let raf=0;
+  const tick=()=>{
+    const r=frame.getBoundingClientRect();
+    if(r.bottom>0 && r.top<innerHeight){
+      const p=(r.top+r.height/2-innerHeight/2)/(innerHeight/2+r.height/2);
+      img.style.transform=`translateY(${(p*-5.2).toFixed(2)}%)`;
+    }
+    raf=0;
+  };
+  addEventListener('scroll',()=>{ if(!raf) raf=requestAnimationFrame(tick); },{passive:true});
+  addEventListener('resize',tick); tick();
+})();
+
+/* ══ reveals, magnetism, curtain ══ */
+const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in'); }),
+  {threshold:.14,rootMargin:'0px 0px -8%'});
+$$('.up').forEach((el,i)=>{ el.style.transitionDelay=(i%3)*.09+'s'; io.observe(el); });
+
+if(!reduce&&!coarse) $$('.btn.solid').forEach(b=>{
+  b.addEventListener('pointermove',e=>{ const r=b.getBoundingClientRect();
+    b.style.transform=`translate(${((e.clientX-r.left)/r.width-.5)*7}px,${((e.clientY-r.top)/r.height-.5)*5}px)`; });
+  b.addEventListener('pointerleave',()=>b.style.transform='');
+});
+
+const lt=$('#lt'), chars=lt.textContent.split(''); lt.textContent='';
+chars.forEach((ch,i)=>{
+  const s=document.createElement('span'); s.textContent = ch===' '?'\u00A0':ch;
+  if(!reduce) s.style.transition=`opacity 1.2s ease ${1.05+i*.045}s, transform 1.5s var(--silk) ${1.05+i*.045}s`;
+  lt.appendChild(s);
+});
+addEventListener('load',()=>{
+  if(reduce) return;
+  $('#curtain').classList.add('up');
+  setTimeout(()=>$('#curtain')?.remove(),2400);
+  $$('#lt span').forEach(s=>{s.style.opacity=1;s.style.transform='none';});
+  const hl=$('#hl'); hl.style.transition='width 1.8s var(--silk) 1.7s'; hl.style.width='100%';
+  [['kk',1.9],['hc',2.3]].forEach(([id,d])=>{
+    const el=document.getElementById(id); el.style.transition=`opacity 1.3s ease ${d}s`; el.style.opacity=1; });
+  const hb=$('#hb'); hb.style.transition='opacity 1.9s ease 1.15s, transform 2.2s var(--silk) 1.15s';
+  hb.style.opacity=1; hb.style.transform='none';
+  const bf=$('#bf'); bf.style.transition='opacity 1.4s ease 2.1s'; bf.style.opacity=1;
+});
+})();
+</script>
+</body>
+</html>

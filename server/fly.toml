@@ -1,0 +1,14 @@
+# fly launch --no-deploy && fly volumes create data --size 1 && fly deploy
+app = "ysnewyork-register"
+primary_region = "fra"
+[build]
+[mounts]
+  source = "data"
+  destination = "/data"
+[http_service]
+  internal_port = 8787
+  force_https = true
+  min_machines_running = 1
+[env]
+  SITE_URL = "https://ysnewyork.com"
+  CORS_ORIGIN = "https://ysnewyork.com"

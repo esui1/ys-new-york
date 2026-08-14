@@ -1,0 +1,17 @@
+# Render.com blueprint: New > Blueprint > point at this repo
+services:
+  - type: web
+    name: ysnewyork-register
+    runtime: docker
+    plan: free
+    envVars:
+      - key: SITE_URL
+        value: https://ysnyc.vercel.app
+      - key: CORS_ORIGIN
+        value: https://ysnyc.vercel.app
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false
+      - key: RESEND_API_KEY
+        sync: false
