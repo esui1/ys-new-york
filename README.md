@@ -56,4 +56,4 @@ The legal pages (`/legal/*.html`) are templates with placeholder text. They requ
 
 ---
 
-Designed and built by the founder.
+Designed and built by Yesui Ankhbayar.
